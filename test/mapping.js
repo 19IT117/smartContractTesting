@@ -37,6 +37,6 @@ contract('contract name : mappingContract' , async () => {
     const result = await contractInstance.doubleNestedMapping.call(1,"0x010aA18A4dAdBA2356733b4348B3FAA8967DD506","0x010aA18A4dAdBA2356733b4348B3FAA8967DD506");
     //console.log(result);
     assert(result == "this is viraj");
-  });
+    });
   });
 });

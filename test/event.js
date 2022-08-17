@@ -16,7 +16,7 @@ contract('Contract Name : eventContract' , async () => {
   it('should emit Event' , async () => {
     await contractInstance.callEvent("Erorr in Calling").then(async (result) => { 
       // truffleAssert.prettyPrintEmittedEvents(result);
-      //console.log(result.logs);
+      console.log(result.logs);
       await truffleAssert.eventEmitted(result, 'functionCalled',async (ev) => {  
         console.log(ev.reason);
         console.log(ev.timestamp.toNumber());

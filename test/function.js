@@ -67,8 +67,16 @@ contract ('Contract Name : functionContract' , async () => {
       const result  = await contractInstance.pubFunction.call({value : 10});
     } catch(e) {
       const err = e.message;
-      console.log(e);
+      //console.log(e);
     } 
-    
   });
+
+  // it('calling fallback function' , async() => {
+  //   try{
+  //     const result = await contractInstance.haha.call();    
+  //   }catch(e){
+  //     console.log(e);
+  //   }
+
+  // });
 });
